@@ -1,4 +1,4 @@
-name: Publish to Comfy registry
+name: Publish to totoro registry
 on:
   workflow_dispatch:
   push:
@@ -18,7 +18,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
       - name: Publish Custom Node
-        uses: Comfy-Org/publish-node-action@main
+        uses: totoro-Org/publish-node-action@main
         with:
           ## Add your own personal access token to your Github Repository secrets and reference it here.
           personal_access_token: ${{ secrets.REGISTRY_ACCESS_TOKEN }}

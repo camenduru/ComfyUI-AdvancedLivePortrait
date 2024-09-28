@@ -5,7 +5,7 @@ import torch
 import cv2
 from PIL import Image
 import folder_paths
-import comfy.utils
+import totoro.utils
 import time
 import copy
 import dill
@@ -169,7 +169,7 @@ class LP_Engine:
         elif model_type == 'stitching_retargeting_module':
             # Special handling for stitching and retargeting module
             config = model_config['model_params']['stitching_retargeting_module_params']
-            checkpoint = comfy.utils.load_torch_file(ckpt_path)
+            checkpoint = totoro.utils.load_torch_file(ckpt_path)
 
             stitcher = StitchingRetargetingNetwork(**config.get('stitching'))
             if is_safetensors:
@@ -186,7 +186,7 @@ class LP_Engine:
             raise ValueError(f"Unknown model type: {model_type}")
 
 
-        model.load_state_dict(comfy.utils.load_torch_file(ckpt_path))
+        model.load_state_dict(totoro.utils.load_torch_file(ckpt_path))
         model.eval()
         return model
 
@@ -655,7 +655,7 @@ class AdvancedLivePortrait:
     def __init__(self):
         self.src_images = None
         self.driving_images = None
-        self.pbar = comfy.utils.ProgressBar(1)
+        self.pbar = totoro.utils.ProgressBar(1)
         self.crop_factor = None
 
     @classmethod

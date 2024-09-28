@@ -1,4 +1,4 @@
-# ComfyUI-AdvancedLivePortrait
+# totoroUI-AdvancedLivePortrait
 
 ## Update
 
@@ -26,11 +26,11 @@ Extract facial expressions from sample photos.
 
 ## Installation
 
-This project has been registered with ComfyUI-Manager. Now you can install it automatically using the manager.
+This project has been registered with totoroUI-Manager. Now you can install it automatically using the manager.
 
 ## Usage
 
-The workflows and sample datas placed in '\custom_nodes\ComfyUI-AdvancedLivePortrait\sample\'
+The workflows and sample datas placed in '\custom_nodes\totoroUI-AdvancedLivePortrait\sample\'
 
 -----
 
@@ -53,7 +53,7 @@ Linking the driving video to 'src_images' will add facial expressions to the dri
 
 You can save and load expressions with the 'Load Exp Data' 'Save Exp Data' nodes.
 
-\ComfyUI\output\exp_data\  Path to the folder being saved
+\totoroUI\output\exp_data\  Path to the folder being saved
 
 -----
 
@@ -61,4 +61,4 @@ You can save and load expressions with the 'Load Exp Data' 'Save Exp Data' nodes
 
 Original author's link : https://liveportrait.github.io/
 
-This project uses a model converted by kijai. link : https://github.com/kijai/ComfyUI-LivePortraitKJ
+This project uses a model converted by kijai. link : https://github.com/kijai/totoroUI-LivePortraitKJ
